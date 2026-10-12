@@ -10,6 +10,7 @@ COPY . /app/
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-EXPOSE 5000
+ENV PORT=5001
+EXPOSE 5001
 
 CMD ["python", "main.py"]
